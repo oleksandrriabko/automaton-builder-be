@@ -1,0 +1,33 @@
+{
+  "name": "automaton-builder-be",
+  "version": "0.0.1",
+  "description": "Awesome project developed with TypeORM.",
+  "devDependencies": {
+    "@types/node": "^8.0.29",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.0",
+    "ts-node": "3.3.0",
+    "typescript": "3.3.3333"
+  },
+  "dependencies": {
+    "@types/jsonwebtoken": "^8.5.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.1",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
+    "cors": "^2.8.5",
+    "express": "^4.15.4",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.14.1",
+    "reflect-metadata": "^0.1.10",
+    "typeorm": "0.2.32"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "start:watch": "nodemon --watch 'src/**' --ext 'ts,json' --ignore 'src/**/*.spec.ts' --exec 'ts-node src/index.ts' --delay 500ms --inspect"
+  }
+}
